@@ -1,0 +1,25 @@
+{
+  "root_workflow_uuid": "f3acb671-a380-47a1-99d7-10b1c435c9c3",
+  "workflow_uuid": "f3acb671-a380-47a1-99d7-10b1c435c9c3",
+  "wf_metadata": {
+    "wf.api": "python"
+  },
+  "graph": {
+    "jobs": {
+      "plot_ID2_ID0000003": {},
+      "plot_ID2_ID0000006": {},
+      "stage_out_local_local_2_0": {},
+      "stage_out_local_local_1_0": {},
+      "clean_up_local_level_3_0": {},
+      "stage_out_local_local_0_0": {},
+      "clean_up_local_level_4_0": {},
+      "clean_up_local_level_5_0": {},
+      "demarg_ID1_ID0000002": {},
+      "inference_ID0_ID0000004": {},
+      "cleanup_gw.dax_0_local": {},
+      "demarg_ID1_ID0000005": {},
+      "inference_ID0_ID0000001": {},
+      "create_dir_gw.dax_0_local": {}
+    }
+  }
+}

@@ -1,0 +1,225 @@
+- invocation: True
+  version: 3.0
+  start: 2025-05-14T18:52:41.435-04:00
+  duration: 19.022
+  transformation: "plot_ID2"
+  derivation: "ID0000003"
+  resource: "condorpool_symlink"
+  wf-label: "gw.dax"
+  wf-stamp: "2025-05-14T18:46:01-04:00"
+  interface: eth0
+  hostaddr: 10.5.141.123
+  pid: 3524280
+  uid: 1579
+  user: aakyuz
+  gid: 502
+  group: condoruser
+  umask: 0o0022
+  mainjob:
+    start: 2025-05-14T18:52:41.478-04:00
+    duration: 18.979
+    pid: 3524281
+    usage:
+      utime: 15.067
+      stime: 1.369
+      maxrss: 343128
+      minflt: 120829
+      majflt: 0
+      nswap: 0
+      inblock: 832
+      outblock: 5872
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 5049
+      nivcsw: 634
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /home/aakyuz/miniconda3/envs/workflow_python/bin/pycbc_inference_plot_posterior
+      mode: 0o100755
+      size: 14287
+      inode: 3935219
+      nlink: 1
+      blksize: 1048576
+      blocks: 17
+      mtime: 2025-04-14T16:29:00-04:00
+      atime: 2025-05-14T18:51:51-04:00
+      ctime: 2025-04-14T16:29:00-04:00
+      uid: 1579
+      user: aakyuz
+      gid: 502
+      group: condoruser
+    argument_vector:
+      - "--z-arg"
+      - "snr"
+      - "--plot-injection-parameters"
+      - "--parameters"
+      - "mchirp"
+      - "q"
+      - "ra"
+      - "dec"
+      - "tc"
+      - "inclination"
+      - "coa_phase"
+      - "polarization"
+      - "distance"
+      - "--input-file"
+      - "CE40-INJECTION_17-0-10.HDFDEMARG-0-10.hdf"
+      - "--output-file"
+      - "CE40-INJECTION_17-0-10.HDFDEMARG-0-10.png"
+    procs:
+  jobids:
+    condor: 19754886.0
+  cwd: /var/lib/condor/execute/dir_3524132/pegasus.BtWcCtMCu
+  usage:
+    utime: 0.015
+    stime: 0.030
+    maxrss: 2740
+    minflt: 134
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 2
+    nivcsw: 5
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: crush-og-10-5-141-123
+    uname_release: 5.4.0-72-generic
+    uname_machine: x86_64
+    ram_total: 116946756
+    ram_free: 27424364
+    ram_shared: 108
+    ram_buffer: 320384
+    swap_total: 2097148
+    swap_free: 1505876
+    cpu_count: 64
+    cpu_speed: 2297
+    cpu_vendor: GenuineIntel
+    cpu_model: Intel(R) Xeon(R) CPU E5-2698 v3 @ 2.30GHz
+    load_min1: 54.46
+    load_min5: 53.75
+    load_min15: 53.46
+    procs_total: 673
+    procs_running: 14
+    procs_sleeping: 343
+    procs_other: 316
+    procs_vmsize: 54148416
+    procs_rss: 10864116
+    task_total: 773
+    task_running: 64
+    task_sleeping: 393
+    task_other: 316
+  files:
+    CE40-INJECTION_17-0-10.HDFDEMARG-0-10.png:
+      lfn: "CE40-INJECTION_17-0-10.HDFDEMARG-0-10.png"
+      file_name: /var/lib/condor/execute/dir_3524132/pegasus.BtWcCtMCu/CE40-INJECTION_17-0-10.HDFDEMARG-0-10.png
+      mode: 0o100644
+      size: 1491140
+      inode: 1313401
+      nlink: 1
+      blksize: 4096
+      blocks: 2920
+      mtime: 2025-05-14T18:52:59-04:00
+      atime: 2025-05-14T18:52:58-04:00
+      ctime: 2025-05-14T18:52:59-04:00
+      uid: 1579
+      user: aakyuz
+      gid: 502
+      group: condoruser
+      output: True
+      sha256: 33650dfdc592fb3fbe1ce4056a8534dc7f6091abe08cb4bd5147d867e4b3687d
+      checksum_timing: 0.01
+    stdin:
+      file_name: /dev/null
+      mode: 0o20666
+      size: 0
+      inode: 6
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2022-05-23T17:16:21-04:00
+      atime: 2022-05-23T17:16:21-04:00
+      ctime: 2022-05-23T17:16:21-04:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    stdout:
+      temporary_name: /tmp/ks.out.0LfuMK
+      descriptor: 3
+      mode: 0o100600
+      size: 0
+      inode: 1313390
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2025-05-14T18:52:41-04:00
+      atime: 2025-05-14T18:52:41-04:00
+      ctime: 2025-05-14T18:52:41-04:00
+      uid: 1579
+      user: aakyuz
+      gid: 502
+      group: condoruser
+    stderr:
+      temporary_name: /tmp/ks.err.9fAjOJ
+      descriptor: 4
+      mode: 0o100600
+      size: 0
+      inode: 1313398
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2025-05-14T18:52:41-04:00
+      atime: 2025-05-14T18:52:41-04:00
+      ctime: 2025-05-14T18:52:41-04:00
+      uid: 1579
+      user: aakyuz
+      gid: 502
+      group: condoruser
+    metadata:
+      temporary_name: /tmp/ks.meta.wF3bXG
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 1313399
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2025-05-14T18:52:41-04:00
+      atime: 2025-05-14T18:52:41-04:00
+      ctime: 2025-05-14T18:52:41-04:00
+      uid: 1579
+      user: aakyuz
+      gid: 502
+      group: condoruser
+
+---------------pegasus-multipart
+- transfer_attempts:
+  - src_url: "file:///home/aakyuz/tutorial/workflow_outputs/local-site-scratch/work/./CE40-INJECTION_17-0-10.HDFDEMARG-0-10.hdf"
+    src_label: "local"
+    dst_url: "symlink:///var/lib/condor/execute/dir_3524132/pegasus.BtWcCtMCu/CE40-INJECTION_17-0-10.HDFDEMARG-0-10.hdf"
+    dst_label: "condorpool_symlink"
+    success: True
+    start: 1747263156
+    duration: 0.0
+    lfn: "CE40-INJECTION_17-0-10.HDFDEMARG-0-10.hdf"
+    bytes: 1768400
+
+---------------pegasus-multipart
+- transfer_attempts:
+  - src_url: "file:///var/lib/condor/execute/dir_3524132/pegasus.BtWcCtMCu/CE40-INJECTION_17-0-10.HDFDEMARG-0-10.png"
+    src_label: "condorpool_symlink"
+    dst_url: "file:///home/aakyuz/tutorial/workflow_outputs/local-site-scratch/work/./CE40-INJECTION_17-0-10.HDFDEMARG-0-10.png"
+    dst_label: "local"
+    success: True
+    start: 1747263183
+    duration: 0.0
+    lfn: "CE40-INJECTION_17-0-10.HDFDEMARG-0-10.png"
+    bytes: 1491140

@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/aakyuz/tutorial/workflow_outputs/local-site-scratch/work/./CE40-INJECTION_17-0-10.HDFDEMARG-0-10.png", "recursive": "False" } }
+  ,
+  {
+    "id": 2,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///home/aakyuz/tutorial/workflow_outputs/local-site-scratch/work/./CE40-INJECTION_35-0-10.HDFDEMARG-0-10.png", "recursive": "False" } }
+]

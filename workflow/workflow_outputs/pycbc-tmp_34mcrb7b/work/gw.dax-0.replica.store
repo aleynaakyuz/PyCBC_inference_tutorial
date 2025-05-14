@@ -1,0 +1,4 @@
+# file-based replica catalog: 2025-05-14T18:46:03.578-04:00
+inj_1.ini file:///home/aakyuz/tutorial/inj_1.ini priority="300" site="local"
+inj_0.ini file:///home/aakyuz/tutorial/inj_0.ini priority="300" site="local"
+margtime.ini file:///home/aakyuz/tutorial/margtime.ini priority="300" site="local"

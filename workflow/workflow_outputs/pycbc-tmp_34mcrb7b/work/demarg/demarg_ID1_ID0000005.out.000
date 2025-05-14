@@ -1,0 +1,447 @@
+- invocation: True
+  version: 3.0
+  start: 2025-05-14T18:50:14.188-04:00
+  duration: 65.370
+  transformation: "demarg_ID1"
+  derivation: "ID0000005"
+  resource: "condorpool_symlink"
+  wf-label: "gw.dax"
+  wf-stamp: "2025-05-14T18:46:01-04:00"
+  interface: eth0
+  hostaddr: 10.5.141.123
+  pid: 3523797
+  uid: 1579
+  user: aakyuz
+  gid: 502
+  group: condoruser
+  umask: 0o0022
+  mainjob:
+    start: 2025-05-14T18:50:14.234-04:00
+    duration: 65.323
+    pid: 3523798
+    usage:
+      utime: 279.093
+      stime: 52.606
+      maxrss: 1273384
+      minflt: 14336795
+      majflt: 0
+      nswap: 0
+      inblock: 2920
+      outblock: 3304
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 19987
+      nivcsw: 14725
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /home/aakyuz/miniconda3/envs/workflow_python/bin/pycbc_inference_model_stats
+      mode: 0o100755
+      size: 5771
+      inode: 3935207
+      nlink: 1
+      blksize: 1048576
+      blocks: 9
+      mtime: 2025-04-14T16:29:00-04:00
+      atime: 2025-05-14T18:36:18-04:00
+      ctime: 2025-04-14T16:29:00-04:00
+      uid: 1579
+      user: aakyuz
+      gid: 502
+      group: condoruser
+    argument_vector:
+      - "--nprocesses"
+      - "16"
+      - "--reconstruct-parameters"
+      - "--force"
+      - "--verbose"
+      - "--input-file"
+      - "CE40-INJECTION_35-0-10.HDF-0-10.hdf"
+      - "--output-file"
+      - "CE40-INJECTION_35-0-10.HDFDEMARG-0-10.hdf"
+    procs:
+  jobids:
+    condor: 19754880.0
+  cwd: /var/lib/condor/execute/dir_3523648/pegasus.vnqcUilfX
+  usage:
+    utime: 0.008
+    stime: 0.037
+    maxrss: 2684
+    minflt: 133
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 4
+    nivcsw: 0
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: crush-og-10-5-141-123
+    uname_release: 5.4.0-72-generic
+    uname_machine: x86_64
+    ram_total: 116946756
+    ram_free: 27416360
+    ram_shared: 108
+    ram_buffer: 320372
+    swap_total: 2097148
+    swap_free: 1505876
+    cpu_count: 64
+    cpu_speed: 2297
+    cpu_vendor: GenuineIntel
+    cpu_model: Intel(R) Xeon(R) CPU E5-2698 v3 @ 2.30GHz
+    load_min1: 47.99
+    load_min5: 51.89
+    load_min15: 52.86
+    procs_total: 667
+    procs_running: 13
+    procs_sleeping: 344
+    procs_other: 310
+    procs_vmsize: 54131568
+    procs_rss: 10845476
+    task_total: 767
+    task_running: 27
+    task_sleeping: 430
+    task_other: 310
+  files:
+    CE40-INJECTION_35-0-10.HDFDEMARG-0-10.hdf:
+      lfn: "CE40-INJECTION_35-0-10.HDFDEMARG-0-10.hdf"
+      file_name: /var/lib/condor/execute/dir_3523648/pegasus.vnqcUilfX/CE40-INJECTION_35-0-10.HDFDEMARG-0-10.hdf
+      mode: 0o100644
+      size: 1644447
+      inode: 1313401
+      nlink: 1
+      blksize: 4096
+      blocks: 3216
+      mtime: 2025-05-14T18:51:18-04:00
+      atime: 2025-05-14T18:51:18-04:00
+      ctime: 2025-05-14T18:51:18-04:00
+      uid: 1579
+      user: aakyuz
+      gid: 502
+      group: condoruser
+      output: True
+      sha256: 30f32d86c84ba6caed7087c8fa6fd8024177b92628b778bcc0c99732ae66292c
+      checksum_timing: 0.01
+    stdin:
+      file_name: /dev/null
+      mode: 0o20666
+      size: 0
+      inode: 6
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2022-05-23T17:16:21-04:00
+      atime: 2022-05-23T17:16:21-04:00
+      ctime: 2022-05-23T17:16:21-04:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    stdout:
+      temporary_name: /tmp/ks.out.zhAmLa
+      descriptor: 3
+      mode: 0o100600
+      size: 0
+      inode: 1313390
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2025-05-14T18:50:14-04:00
+      atime: 2025-05-14T18:50:14-04:00
+      ctime: 2025-05-14T18:50:14-04:00
+      uid: 1579
+      user: aakyuz
+      gid: 502
+      group: condoruser
+    stderr:
+      temporary_name: /tmp/ks.err.fFNxud
+      descriptor: 4
+      mode: 0o100600
+      size: 13517
+      inode: 1313398
+      nlink: 1
+      blksize: 4096
+      blocks: 32
+      mtime: 2025-05-14T18:51:18-04:00
+      atime: 2025-05-14T18:50:14-04:00
+      ctime: 2025-05-14T18:51:18-04:00
+      uid: 1579
+      user: aakyuz
+      gid: 502
+      group: condoruser
+      data_truncated: false
+      data: |
+        2025-05-14T18:50:26.487-04:00 INFO : Loading config file
+        2025-05-14T18:50:26.515-04:00 INFO : Loading model
+        2025-05-14T18:50:26.529-04:00 INFO : Setting up priors for each parameter
+        2025-05-14T18:50:26.531-04:00 WARNING : No sampling_params section read from config file
+        2025-05-14T18:50:26.531-04:00 INFO : Loading waveform transforms
+        2025-05-14T18:50:26.538-04:00 INFO : Determining analysis times to use
+        2025-05-14T18:50:26.553-04:00 INFO : Generating Fake Strain
+        2025-05-14T18:50:26.553-04:00 INFO : Reading ASD from file
+        2025-05-14T18:50:26.570-04:00 INFO : Making colored noise
+        2025-05-14T18:50:36.754-04:00 INFO : Highpass Filtering
+        2025-05-14T18:50:36.808-04:00 INFO : Resampling data
+        2025-05-14T18:50:37.213-04:00 INFO : Applying injections
+        2025-05-14T18:50:37.258-04:00 INFO : Injecting at 1187025982.0, method is lal
+        2025-05-14T18:50:37.278-04:00 INFO : Converting to float64
+        2025-05-14T18:50:37.279-04:00 INFO : Highpass Filtering
+        2025-05-14T18:50:37.285-04:00 INFO : Remove Padding
+        2025-05-14T18:50:37.293-04:00 INFO : Generating Fake Strain
+        2025-05-14T18:50:37.293-04:00 INFO : Reading ASD from file
+        2025-05-14T18:50:37.306-04:00 INFO : Making colored noise
+        2025-05-14T18:50:44.996-04:00 INFO : Highpass Filtering
+        2025-05-14T18:50:45.026-04:00 INFO : Resampling data
+        2025-05-14T18:50:45.321-04:00 INFO : Applying injections
+        2025-05-14T18:50:45.364-04:00 INFO : Injecting at 1187025982.0, method is lal
+        2025-05-14T18:50:45.386-04:00 INFO : Converting to float64
+        2025-05-14T18:50:45.386-04:00 INFO : Highpass Filtering
+        2025-05-14T18:50:45.394-04:00 INFO : Remove Padding
+        2025-05-14T18:50:45.415-04:00 INFO : Marginalizing over tc, 1000 points from prior
+        2025-05-14T18:50:45.416-04:00 INFO : Marginalizing over polarization, 1000 points from prior
+        2025-05-14T18:50:45.416-04:00 INFO : Marginalizing over ra, 1000 points from prior
+        2025-05-14T18:50:45.416-04:00 INFO : Marginalizing over dec, 1000 points from prior
+        2025-05-14T18:50:45.417-04:00 INFO : Marginalizing over distance
+        2025-05-14T18:50:45.418-04:00 INFO : Prior is directly on distance, setting up 1000 grid weights
+        2025-05-14T18:50:45.454-04:00 INFO : Interpolator valid for SNRs in (5.0, 30.430144350924337)
+        2025-05-14T18:50:45.455-04:00 INFO : Interpolator using grid (100, 100)
+        2025-05-14T18:50:45.457-04:00 INFO : Setup up likelihood interpolator
+        
+          0%|          | 0/100 [00:00<?, ?it/s]/home/aakyuz/miniconda3/envs/workflow_python/lib/python3.11/site-packages/pycbc/inference/models/tools.py:944: RuntimeWarning: divide by zero encountered in log
+          logw = numpy.log(dist_weights)
+        
+          3%|▎         | 3/100 [00:00<00:03, 27.03it/s]
+          7%|▋         | 7/100 [00:00<00:02, 33.73it/s]
+         12%|█▏        | 12/100 [00:00<00:02, 40.34it/s]
+         17%|█▋        | 17/100 [00:00<00:01, 43.38it/s]
+         22%|██▏       | 22/100 [00:00<00:01, 45.18it/s]
+         27%|██▋       | 27/100 [00:00<00:01, 46.30it/s]
+         32%|███▏      | 32/100 [00:00<00:01, 46.92it/s]
+         37%|███▋      | 37/100 [00:00<00:01, 47.44it/s]
+         42%|████▏     | 42/100 [00:00<00:01, 47.69it/s]
+         47%|████▋     | 47/100 [00:01<00:01, 47.87it/s]
+         52%|█████▏    | 52/100 [00:01<00:00, 48.03it/s]
+         57%|█████▋    | 57/100 [00:01<00:00, 48.17it/s]
+         62%|██████▏   | 62/100 [00:01<00:00, 48.36it/s]
+         67%|██████▋   | 67/100 [00:01<00:00, 37.47it/s]
+         72%|███████▏  | 72/100 [00:01<00:00, 32.52it/s]
+         76%|███████▌  | 76/100 [00:01<00:00, 29.14it/s]
+         80%|████████  | 80/100 [00:02<00:00, 28.95it/s]
+         84%|████████▍ | 84/100 [00:02<00:00, 28.80it/s]
+         88%|████████▊ | 88/100 [00:02<00:00, 28.70it/s]
+         91%|█████████ | 91/100 [00:02<00:00, 28.64it/s]
+         94%|█████████▍| 94/100 [00:02<00:00, 28.63it/s]
+         97%|█████████▋| 97/100 [00:02<00:00, 28.04it/s]
+        100%|██████████| 100/100 [00:02<00:00, 28.17it/s]
+        100%|██████████| 100/100 [00:02<00:00, 35.92it/s]
+        2025-05-14T18:50:48.255-04:00 WARNING : WARNING: The following parameters are generally not used by CBC waveform generators: mchirp, q. If you have provided a transform that converted these into known parameters (e.g., mchirp, q to mass1, mass2) or you are using a custom model that uses these parameters, you can safely ignore this message.
+        2025-05-14T18:50:48.261-04:00 INFO : Using 2048 sample rate for marginalization
+        2025-05-14T18:50:48.591-04:00 INFO : Getting samples
+        2025-05-14T18:50:48.615-04:00 INFO : Loaded 2073 samples
+        2025-05-14T18:50:48.616-04:00 INFO : Calculating stats
+        
+          0%|          | 0/2073 [00:00<?, ?it/s]2025-05-14T18:50:48.640-04:00 INFO : pregenerating sky pointings
+        2025-05-14T18:50:48.640-04:00 INFO : pregenerating sky pointings
+        2025-05-14T18:50:48.641-04:00 INFO : pregenerating sky pointings
+        2025-05-14T18:50:48.641-04:00 INFO : drawing samples: 1000000
+        2025-05-14T18:50:48.641-04:00 INFO : drawing samples: 1000000
+        2025-05-14T18:50:48.641-04:00 INFO : drawing samples: 1000000
+        2025-05-14T18:50:48.645-04:00 INFO : pregenerating sky pointings
+        2025-05-14T18:50:48.646-04:00 INFO : pregenerating sky pointings
+        2025-05-14T18:50:48.646-04:00 INFO : drawing samples: 1000000
+        2025-05-14T18:50:48.647-04:00 INFO : pregenerating sky pointings
+        2025-05-14T18:50:48.646-04:00 INFO : drawing samples: 1000000
+        2025-05-14T18:50:48.648-04:00 INFO : pregenerating sky pointings
+        2025-05-14T18:50:48.648-04:00 INFO : drawing samples: 1000000
+        2025-05-14T18:50:48.649-04:00 INFO : pregenerating sky pointings
+        2025-05-14T18:50:48.649-04:00 INFO : drawing samples: 1000000
+        2025-05-14T18:50:48.650-04:00 INFO : drawing samples: 1000000
+        2025-05-14T18:50:48.653-04:00 INFO : pregenerating sky pointings
+        2025-05-14T18:50:48.653-04:00 INFO : pregenerating sky pointings
+        2025-05-14T18:50:48.654-04:00 INFO : drawing samples: 1000000
+        2025-05-14T18:50:48.654-04:00 INFO : drawing samples: 1000000
+        2025-05-14T18:50:48.731-04:00 INFO : sorting into time delay dict
+        2025-05-14T18:50:48.731-04:00 INFO : sorting into time delay dict
+        2025-05-14T18:50:48.731-04:00 INFO : sorting into time delay dict
+        2025-05-14T18:50:48.757-04:00 INFO : sorting into time delay dict
+        2025-05-14T18:50:48.763-04:00 INFO : sorting into time delay dict
+        2025-05-14T18:50:48.764-04:00 INFO : sorting into time delay dict
+        2025-05-14T18:50:48.766-04:00 INFO : sorting into time delay dict
+        2025-05-14T18:50:48.767-04:00 INFO : sorting into time delay dict
+        2025-05-14T18:50:48.791-04:00 INFO : sorting into time delay dict
+        2025-05-14T18:50:48.791-04:00 INFO : sorting into time delay dict
+        /home/aakyuz/miniconda3/envs/workflow_python/lib/python3.11/site-packages/pycbc/inference/models/tools.py:780: RuntimeWarning: divide by zero encountered in log
+          xl = draw_sample(loglr + numpy.log(weights))
+        
+          0%|          | 1/2073 [00:00<31:43,  1.09it/s]2025-05-14T18:50:49.548-04:00 INFO : pregenerating sky pointings
+        2025-05-14T18:50:49.548-04:00 INFO : drawing samples: 1000000
+        /home/aakyuz/miniconda3/envs/workflow_python/lib/python3.11/site-packages/pycbc/inference/models/tools.py:780: RuntimeWarning: divide by zero encountered in log
+          xl = draw_sample(loglr + numpy.log(weights))
+        /home/aakyuz/miniconda3/envs/workflow_python/lib/python3.11/site-packages/pycbc/inference/models/tools.py:780: RuntimeWarning: divide by zero encountered in log
+          xl = draw_sample(loglr + numpy.log(weights))
+        2025-05-14T18:50:49.594-04:00 INFO : pregenerating sky pointings
+        2025-05-14T18:50:49.594-04:00 INFO : drawing samples: 1000000
+        2025-05-14T18:50:49.594-04:00 INFO : pregenerating sky pointings
+        2025-05-14T18:50:49.594-04:00 INFO : drawing samples: 1000000
+        2025-05-14T18:50:49.624-04:00 INFO : sorting into time delay dict
+        2025-05-14T18:50:49.670-04:00 INFO : sorting into time delay dict
+        2025-05-14T18:50:49.671-04:00 INFO : sorting into time delay dict
+        /home/aakyuz/miniconda3/envs/workflow_python/lib/python3.11/site-packages/pycbc/inference/models/tools.py:780: RuntimeWarning: divide by zero encountered in log
+          xl = draw_sample(loglr + numpy.log(weights))
+        2025-05-14T18:50:49.731-04:00 INFO : pregenerating sky pointings
+        2025-05-14T18:50:49.731-04:00 INFO : drawing samples: 1000000
+        /home/aakyuz/miniconda3/envs/workflow_python/lib/python3.11/site-packages/pycbc/inference/models/tools.py:780: RuntimeWarning: divide by zero encountered in log
+          xl = draw_sample(loglr + numpy.log(weights))
+        
+          0%|          | 2/2073 [00:01<17:36,  1.96it/s]2025-05-14T18:50:49.776-04:00 INFO : pregenerating sky pointings
+        2025-05-14T18:50:49.777-04:00 INFO : drawing samples: 1000000
+        2025-05-14T18:50:49.819-04:00 INFO : sorting into time delay dict
+        2025-05-14T18:50:49.864-04:00 INFO : sorting into time delay dict
+        /home/aakyuz/miniconda3/envs/workflow_python/lib/python3.11/site-packages/pycbc/inference/models/tools.py:780: RuntimeWarning: divide by zero encountered in log
+          xl = draw_sample(loglr + numpy.log(weights))
+        
+          0%|          | 3/2073 [00:01<13:46,  2.51it/s]2025-05-14T18:50:50.039-04:00 INFO : pregenerating sky pointings
+        2025-05-14T18:50:50.039-04:00 INFO : drawing samples: 1000000
+        2025-05-14T18:50:50.118-04:00 INFO : sorting into time delay dict
+        
+        0it [00:00, ?it/s]
+        0it [00:00, ?it/s]
+        /home/aakyuz/miniconda3/envs/workflow_python/lib/python3.11/site-packages/pycbc/inference/models/tools.py:780: RuntimeWarning: divide by zero encountered in log
+          xl = draw_sample(loglr + numpy.log(weights))
+        
+        0it [00:00, ?it/s]
+        0it [00:00, ?it/s]
+        /home/aakyuz/miniconda3/envs/workflow_python/lib/python3.11/site-packages/pycbc/inference/models/tools.py:780: RuntimeWarning: divide by zero encountered in log
+          xl = draw_sample(loglr + numpy.log(weights))
+        
+          0%|          | 7/2073 [00:12<1:11:57,  2.09s/it]
+        0it [00:00, ?it/s]
+        0it [00:00, ?it/s]
+        
+        0it [00:00, ?it/s]
+        0it [00:00, ?it/s]
+        /home/aakyuz/miniconda3/envs/workflow_python/lib/python3.11/site-packages/pycbc/inference/models/tools.py:780: RuntimeWarning: divide by zero encountered in log
+          xl = draw_sample(loglr + numpy.log(weights))
+        
+        0it [00:00, ?it/s]
+        0it [00:00, ?it/s]
+        /home/aakyuz/miniconda3/envs/workflow_python/lib/python3.11/site-packages/pycbc/inference/models/tools.py:780: RuntimeWarning: divide by zero encountered in log
+          xl = draw_sample(loglr + numpy.log(weights))
+        
+        0it [00:00, ?it/s]
+        0it [00:00, ?it/s]
+        /home/aakyuz/miniconda3/envs/workflow_python/lib/python3.11/site-packages/pycbc/inference/models/tools.py:780: RuntimeWarning: divide by zero encountered in log
+          xl = draw_sample(loglr + numpy.log(weights))
+        
+        0it [00:00, ?it/s]
+        0it [00:00, ?it/s]
+        /home/aakyuz/miniconda3/envs/workflow_python/lib/python3.11/site-packages/pycbc/inference/models/tools.py:780: RuntimeWarning: divide by zero encountered in log
+          xl = draw_sample(loglr + numpy.log(weights))
+        
+        0it [00:00, ?it/s]
+        0it [00:00, ?it/s]
+        
+        0it [00:00, ?it/s]
+        0it [00:00, ?it/s]
+        
+        0it [00:00, ?it/s]
+        0it [00:00, ?it/s]
+        /home/aakyuz/miniconda3/envs/workflow_python/lib/python3.11/site-packages/pycbc/inference/models/tools.py:780: RuntimeWarning: divide by zero encountered in log
+          xl = draw_sample(loglr + numpy.log(weights))
+        
+          0%|          | 9/2073 [00:20<1:36:20,  2.80s/it]
+        0it [00:00, ?it/s]
+        0it [00:00, ?it/s]
+        
+        0it [00:00, ?it/s]
+        0it [00:00, ?it/s]
+        
+        0it [00:00, ?it/s]
+        0it [00:00, ?it/s]
+        /home/aakyuz/miniconda3/envs/workflow_python/lib/python3.11/site-packages/pycbc/inference/models/tools.py:780: RuntimeWarning: divide by zero encountered in log
+          xl = draw_sample(loglr + numpy.log(weights))
+        
+        0it [00:00, ?it/s]
+        0it [00:00, ?it/s]
+        /home/aakyuz/miniconda3/envs/workflow_python/lib/python3.11/site-packages/pycbc/inference/models/tools.py:780: RuntimeWarning: divide by zero encountered in log
+          xl = draw_sample(loglr + numpy.log(weights))
+        
+          1%|          | 12/2073 [00:22<1:05:51,  1.92s/it]
+        0it [00:00, ?it/s]
+        0it [00:00, ?it/s]
+        /home/aakyuz/miniconda3/envs/workflow_python/lib/python3.11/site-packages/pycbc/inference/models/tools.py:780: RuntimeWarning: divide by zero encountered in log
+          xl = draw_sample(loglr + numpy.log(weights))
+        
+          1%|          | 16/2073 [00:23<39:33,  1.15s/it]  
+        0it [00:00, ?it/s]
+        0it [00:00, ?it/s]
+        
+          1%|          | 22/2073 [00:24<22:32,  1.52it/s]
+         40%|███▉      | 826/2073 [00:24<00:08, 140.75it/s]
+         52%|█████▏    | 1080/2073 [00:25<00:06, 164.88it/s]
+         61%|██████    | 1263/2073 [00:26<00:04, 185.79it/s]
+         67%|██████▋   | 1399/2073 [00:26<00:03, 198.64it/s]
+         72%|███████▏  | 1502/2073 [00:27<00:02, 203.21it/s]
+         76%|███████▋  | 1581/2073 [00:27<00:02, 209.33it/s]
+         79%|███████▉  | 1644/2073 [00:27<00:01, 215.22it/s]
+         82%|████████▏ | 1695/2073 [00:27<00:01, 222.58it/s]
+         84%|████████▍ | 1739/2073 [00:28<00:01, 226.46it/s]
+         86%|████████▌ | 1778/2073 [00:28<00:01, 235.68it/s]
+         88%|████████▊ | 1814/2073 [00:28<00:01, 241.53it/s]
+         89%|████████▉ | 1848/2073 [00:28<00:00, 240.50it/s]
+         91%|█████████ | 1884/2073 [00:28<00:00, 259.12it/s]
+         92%|█████████▏| 1916/2073 [00:28<00:00, 164.43it/s]
+         94%|█████████▍| 1951/2073 [00:29<00:00, 188.68it/s]
+         95%|█████████▌| 1978/2073 [00:29<00:00, 115.31it/s]
+        100%|██████████| 2073/2073 [00:29<00:00, 69.82it/s] 
+        2025-05-14T18:51:18.313-04:00 INFO : Copying input to output
+        2025-05-14T18:51:18.361-04:00 INFO : Writing stats to output
+        2025-05-14T18:51:18.387-04:00 INFO : Writing reconstructed parameters
+        2025-05-14T18:51:18.399-04:00 INFO : Done
+        
+    metadata:
+      temporary_name: /tmp/ks.meta.k7Sp9d
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 1313399
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2025-05-14T18:50:14-04:00
+      atime: 2025-05-14T18:50:14-04:00
+      ctime: 2025-05-14T18:50:14-04:00
+      uid: 1579
+      user: aakyuz
+      gid: 502
+      group: condoruser
+
+---------------pegasus-multipart
+- transfer_attempts:
+  - src_url: "file:///home/aakyuz/tutorial/workflow_outputs/local-site-scratch/work/./CE40-INJECTION_35-0-10.HDF-0-10.hdf"
+    src_label: "local"
+    dst_url: "symlink:///var/lib/condor/execute/dir_3523648/pegasus.vnqcUilfX/CE40-INJECTION_35-0-10.HDF-0-10.hdf"
+    dst_label: "condorpool_symlink"
+    success: True
+    start: 1747263009
+    duration: 0.0
+    lfn: "CE40-INJECTION_35-0-10.HDF-0-10.hdf"
+    bytes: 1474511
+
+---------------pegasus-multipart
+- transfer_attempts:
+  - src_url: "file:///var/lib/condor/execute/dir_3523648/pegasus.vnqcUilfX/CE40-INJECTION_35-0-10.HDFDEMARG-0-10.hdf"
+    src_label: "condorpool_symlink"
+    dst_url: "file:///home/aakyuz/tutorial/workflow_outputs/local-site-scratch/work/./CE40-INJECTION_35-0-10.HDFDEMARG-0-10.hdf"
+    dst_label: "local"
+    success: True
+    start: 1747263082
+    duration: 0.1
+    lfn: "CE40-INJECTION_35-0-10.HDFDEMARG-0-10.hdf"
+    bytes: 1644447

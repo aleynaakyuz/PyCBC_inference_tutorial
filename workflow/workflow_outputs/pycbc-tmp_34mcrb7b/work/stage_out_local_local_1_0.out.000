@@ -1,0 +1,187 @@
+- invocation: True
+  version: 3.0
+  start: 2025-05-14T18:52:22.350-04:00
+  duration: 4.160
+  transformation: "pegasus::transfer"
+  derivation: "null"
+  resource: "local"
+  wf-label: "gw.dax"
+  wf-stamp: "2025-05-14T18:46:01-04:00"
+  interface: ens160
+  hostaddr: 128.230.21.204
+  hostname: sugwg-login.syr.edu
+  pid: 3930693
+  uid: 1579
+  user: aakyuz
+  gid: 502
+  group: condoruser
+  umask: 0o0022
+  mainjob:
+    start: 2025-05-14T18:52:22.368-04:00
+    duration: 4.142
+    pid: 3930700
+    usage:
+      utime: 0.253
+      stime: 0.133
+      maxrss: 28436
+      minflt: 25443
+      majflt: 0
+      nswap: 0
+      inblock: 6672
+      outblock: 6720
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 736
+      nivcsw: 5
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /home/aakyuz/pegasus-5.0.8/bin/pegasus-transfer
+      mode: 0o100755
+      size: 3288
+      inode: 323757
+      nlink: 1
+      blksize: 1048576
+      blocks: 9
+      mtime: 2024-08-16T18:36:38-04:00
+      atime: 2025-05-14T02:27:58-04:00
+      ctime: 2024-11-10T13:20:56-05:00
+      uid: 1579
+      user: aakyuz
+      gid: 502
+      group: condoruser
+    argument_vector:
+      - "--threads"
+      - "2"
+    procs:
+  jobids:
+    condor: 19754885.0
+  cwd: /var/spool/condor/local_univ_execute/dir_3930687
+  usage:
+    utime: 0.004
+    stime: 0.015
+    maxrss: 2668
+    minflt: 153
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 5
+    nivcsw: 0
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: sugwg-login.ad.syr.edu
+    uname_release: 5.4.0-65-generic
+    uname_machine: x86_64
+    ram_total: 98871204
+    ram_free: 1307016
+    ram_shared: 300
+    ram_buffer: 53052
+    swap_total: 4001788
+    swap_free: 3471776
+    cpu_count: 24
+    cpu_speed: 2394
+    cpu_vendor: GenuineIntel
+    cpu_model: Intel(R) Xeon(R) Platinum 8260 CPU @ 2.40GHz
+    load_min1: 0.00
+    load_min5: 0.02
+    load_min15: 0.02
+    procs_total: 565
+    procs_running: 1
+    procs_sleeping: 377
+    procs_other: 187
+    procs_vmsize: 11181704
+    procs_rss: 2350084
+    task_total: 601
+    task_running: 1
+    task_sleeping: 413
+    task_other: 187
+  files:
+    stdin:
+      descriptor_number: 0
+      mode: 0o10600
+      size: 0
+      inode: 1414468477
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2025-05-14T18:52:22-04:00
+      atime: 2025-05-14T18:52:22-04:00
+      ctime: 2025-05-14T18:52:22-04:00
+      uid: 1579
+      user: aakyuz
+      gid: 502
+      group: condoruser
+    stdout:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_3930687/ks.out.Fb8H5I
+      descriptor: 3
+      mode: 0o100600
+      size: 2654
+      inode: 1050368
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2025-05-14T18:52:26-04:00
+      atime: 2025-05-14T18:52:22-04:00
+      ctime: 2025-05-14T18:52:26-04:00
+      uid: 1579
+      user: aakyuz
+      gid: 502
+      group: condoruser
+      data_truncated: false
+      data: |
+        2025-05-14 18:52:22,485    INFO:  Reading URL pairs from stdin
+        2025-05-14 18:52:22,485    INFO:  2 transfers loaded
+        2025-05-14 18:52:22,485    INFO:  PATH=/home/aakyuz/pegasus-5.0.8/bin:/home/aakyuz/pegasus-5.0.8/bin:/home/aakyuz/miniconda3/envs/workflow_python/bin:/home/aakyuz/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/path/to/miniconda3/bin:$/home/aakyuz:/bin:/usr/bin:/usr/local/bin:/opt/local/bin
+        2025-05-14 18:52:22,485    INFO:  LD_LIBRARY_PATH=
+        2025-05-14 18:52:22,493    INFO:  --------------------------------------------------------------------------------
+        2025-05-14 18:52:22,493    INFO:  Starting transfers - attempt 1
+        2025-05-14 18:52:24,504    INFO:  /bin/cp -f -R -L '/home/aakyuz/tutorial/workflow_outputs/local-site-scratch/work/./CE40-INJECTION_17-0-10.HDFDEMARG-0-10.hdf' '/home/aakyuz/tutorial/workflow_outputs/CE40-DEMARG_/HOME/AAKYUZ/TUTORIAL/INJECTIONS/CE40-INJECTION_17-0-10.HDFDEMARG-0-10.hdf'
+        2025-05-14 18:52:24,521    INFO:  Tool found: pegasus-integrity   Version: N/A   Path: /home/aakyuz/pegasus-5.0.8/bin/pegasus-integrity
+        2025-05-14 18:52:24,522    INFO:  /home/aakyuz/pegasus-5.0.8/bin/pegasus-integrity --verify="CE40-INJECTION_17-0-10.HDFDEMARG-0-10.hdf=/home/aakyuz/tutorial/workflow_outputs/CE40-DEMARG_/HOME/AAKYUZ/TUTORIAL/INJECTIONS/CE40-INJECTION_17-0-10.HDFDEMARG-0-10.hdf"
+        2025-05-14 18:52:24,678    INFO:  /bin/cp -f -R -L '/home/aakyuz/tutorial/workflow_outputs/local-site-scratch/work/./CE40-INJECTION_35-0-10.HDFDEMARG-0-10.hdf' '/home/aakyuz/tutorial/workflow_outputs/CE40-DEMARG_/HOME/AAKYUZ/TUTORIAL/INJECTIONS/CE40-INJECTION_35-0-10.HDFDEMARG-0-10.hdf'
+        2025-05-14 18:52:24,692    INFO:  /home/aakyuz/pegasus-5.0.8/bin/pegasus-integrity --verify="CE40-INJECTION_35-0-10.HDFDEMARG-0-10.hdf=/home/aakyuz/tutorial/workflow_outputs/CE40-DEMARG_/HOME/AAKYUZ/TUTORIAL/INJECTIONS/CE40-INJECTION_35-0-10.HDFDEMARG-0-10.hdf"
+        2025-05-14 18:52:26,494    INFO:  --------------------------------------------------------------------------------
+        2025-05-14 18:52:26,494    INFO:  @@@MONITORING_PAYLOAD - START@@@{"ts": 1747263146, "monitoring_event": "int.metric", "payload": [{"event": "check", "file_type": "output", "succeeded": 2, "failed": 0, "duration": "0.277"}]}@@@MONITORING_PAYLOAD - END@@@
+        2025-05-14 18:52:26,494    INFO:  Stats: Total 2 transfers, 3.3 MB transferred in 4 seconds. Rate: 831.1 KB/s (6.5 Mb/s)
+        2025-05-14 18:52:26,494    INFO:         Between sites local->local : 2 transfers, 3.3 MB transferred in 4 seconds. Rate: 831.1 KB/s (6.5 Mb/s)
+        2025-05-14 18:52:26,495    INFO:  All transfers completed successfully.
+        
+    stderr:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_3930687/ks.err.bzLruL
+      descriptor: 4
+      mode: 0o100600
+      size: 0
+      inode: 1050369
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2025-05-14T18:52:22-04:00
+      atime: 2025-05-14T18:52:22-04:00
+      ctime: 2025-05-14T18:52:22-04:00
+      uid: 1579
+      user: aakyuz
+      gid: 502
+      group: condoruser
+    metadata:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_3930687/ks.meta.bGyfVK
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 1050370
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2025-05-14T18:52:22-04:00
+      atime: 2025-05-14T18:52:22-04:00
+      ctime: 2025-05-14T18:52:22-04:00
+      uid: 1579
+      user: aakyuz
+      gid: 502
+      group: condoruser
