@@ -1,1 +1,0 @@
-pegasus-status --verbose --long ./pycbc-tmp_34mcrb7b/work $@

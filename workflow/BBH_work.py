@@ -4,31 +4,60 @@ import h5py
 import numpy as np
 import pycbc.workflow as wf
 import pycbc
-import argparse, os
-import configparser
-from pycbc.workflow.configuration import WorkflowConfigParser
+import argparse
 import pycbc.workflow.pegasus_workflow as wdax
 from pycbc.conversions import mchirp_from_mass1_mass2, q_from_mass1_mass2
 from pycbc.psd.read import from_txt
-from ce_sens.utils import calculate_snr, get_parameter_list
 from pycbc.waveform import get_waveform_filter_length_in_time
+from pycbc.detector import Detector
+from pycbc.waveform import get_fd_waveform
+from pycbc.filter import sigma
 
+## Define command line input options
 parser = argparse.ArgumentParser()
 parser.add_argument("--injections", nargs='*')
 parser.add_argument("--inference-config")
 parser.add_argument("--detectors", nargs='*')
 parser.add_argument("--psd-paths", nargs='*')
 
-pycbc.init_logging(True)
-wf.add_workflow_command_line_group(parser)
-wf.add_workflow_settings_cli(parser)
-opts = parser.parse_args()
+pycbc.init_logging(True) ## adds verbosity
+wf.add_workflow_command_line_group(parser) ## adds command line input options
+wf.add_workflow_settings_cli(parser) ## Adds workflow options to an argument parser
+opts = parser.parse_args() ## get options
 
-workflow = wf.Workflow(opts, "gw")
-wf.makedir(opts.output_dir)
-infhand = wf.resolve_url_to_file(opts.inference_config)
+workflow = wf.Workflow(opts, "gw") ## define workflow name
+wf.makedir(opts.output_dir) ## create output directory
+infhand = wf.resolve_url_to_file(opts.inference_config) ## read the common inference config file
+
+## You can define any function you need.
+def get_proj_strain(det, param): 
+    """
+	Calculates the projected signal.
+    """
+    ra = param['ra']
+    dec = param['dec']
+    pol = param['polarization']
+    tc = param['tc']
+    
+    detec = Detector(det)
+    hp, hc = get_fd_waveform(**param)
+    f_plus, f_cross = detec.antenna_pattern(ra, dec, pol, tc)
+    
+    proj_strain = f_plus * hp + f_cross * hc
+    return proj_strain
+
+def calculate_snr(det, psd, param, low_freq, high_freq=None):
+    """
+	Calculates the snr
+    """
+    proj_strain = get_proj_strain(det, param)
+    amp = sigma(proj_strain, psd=psd, low_frequency_cutoff=low_freq, high_frequency_cutoff=high_freq)
+    return amp
 
 def get_net_snr(params):
+	"""
+	Calculates the network snr
+	"""
 	df = 0.001
 	net_snr_sq = 0
 	for k, det in enumerate(opts.detectors):
@@ -37,6 +66,7 @@ def get_net_snr(params):
 		net_snr_sq += snr**2
 	return np.sqrt(net_snr_sq)
 
+## Define executables
 inference_exe = wf.Executable(workflow.cp, "inference", ifos=workflow.ifos,
                               out_dir=opts.output_dir)
 
@@ -47,7 +77,7 @@ plot_exe = wf.Executable(workflow.cp, "plot", ifos=workflow.ifos,
                               out_dir=opts.output_dir)
 
 df = 0.001
-for i, inj in enumerate(opts.injections):
+for i, inj in enumerate(opts.injections): ## Loop over different injections
 	params2 = h5py.File(inj)
 	params = {key:params2[key][:][0] for key in list(params2.keys())}
 	att = {key:params2.attrs[key] for key in list(params2.attrs.keys())}
@@ -55,7 +85,10 @@ for i, inj in enumerate(opts.injections):
 
 	params.update({'delta_f':df})
 	net_snr = get_net_snr(params)
-	time = get_waveform_filter_length_in_time(**params)
+
+	## calculates the length of the signal
+	time = get_waveform_filter_length_in_time(**params) 
+
 	tc = params['tc']
 	ra = params['ra']
 	dec = params['dec']
@@ -64,8 +97,9 @@ for i, inj in enumerate(opts.injections):
 	mass2 = params['mass2']
 	mchirp = mchirp_from_mass1_mass2(mass1, mass2)
 	q = q_from_mass1_mass2(mass1, mass2)
-	path = opts.output_dir + '/inj_%s.ini' % i
-	f = open(path, 'w')
+
+	path = opts.output_dir + '/inj_%s.ini' % i # define the path of the individual inference config file
+	f = open(path, 'w') ## open and write the file
 	f.write(f"""
 [model]
 marginalize_distance_snr_range = {max(net_snr - 20, 5)}, {net_snr + 20}
@@ -98,9 +132,11 @@ max-distance = {dist*2}
 """)
 	f.close()
 	fhand = wf.resolve_url_to_file(path)
+
+	## Create a node for every executable
 	node = inference_exe.create_node()
 
-	node.add_input_list_opt("--config-file", [infhand, fhand])
+	node.add_input_list_opt("--config-file", [infhand, fhand]) 
 
 	inference_file = node.new_output_file_opt(workflow.analysis_time, '.hdf', '--output-file', tags=[str(inj)])
 
