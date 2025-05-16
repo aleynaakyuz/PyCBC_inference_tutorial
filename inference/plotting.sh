@@ -8,5 +8,5 @@ pycbc_inference_plot_posterior \
 --input-file demarg.hdf \
 --output-file demarg.png \
 --parameters \
- mchirp q ra dec tc inclination coa_phase polarization distance \
+ mass1 mass2 ra dec tc inclination coa_phase polarization distance \
 --z-arg snr --plot-injection-parameters
