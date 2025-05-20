@@ -1,4 +1,4 @@
-#!/bin/bash
+d#!/bin/bash
 
 ## This script performs demarginalization.
 
@@ -9,7 +9,7 @@ export PYCBC_DETECTOR_CONFIG=detectors.ini ## This adds the detector custom dete
 pycbc_inference_model_stats \
 --input-file marginalized_model.hdf \
 --output-file demarg.hdf \
---nprocesses 1 \
+--nprocesses 6 \
 --reconstruct-parameters \
 --force \
 --verbose
