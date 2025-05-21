@@ -5,5 +5,3 @@ conda install python=3.11
 git clone http://github.com/gwastro/pycbc.git
 cd pycbc
 pip install .
-pip install mkl dynesty # optional dependencies that we'll use in this example
-
