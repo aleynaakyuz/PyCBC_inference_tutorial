@@ -5,8 +5,8 @@
 OMP_NUM_THREADS=1 
 
 pycbc_inference_plot_posterior \
---input-file demarg.hdf \
---output-file demarg.png \
+--input-file marginalized_model.hdf \
+--output-file marginalized.png \
 --parameters \
- mass1 mass2 ra dec tc inclination coa_phase polarization distance \
+ mass1 mass2 inclination coa_phase \
 --z-arg snr --plot-injection-parameters
